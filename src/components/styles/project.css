@@ -1,0 +1,25 @@
+.scrolling-container {
+    display: flex;
+    width: calc(350px * 10); /* Adjusted to match the width of each item times the total number */
+    animation: scroll-infinite 20s linear infinite;
+  }
+  
+  @keyframes scroll-infinite {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1750px); /* Shift by the width of one full set of items (5 * 350px) */
+    }
+  }
+  
+  /* Pause the animation when the class 'paused' is added */
+  .paused {
+    animation-play-state: paused !important;
+  }
+  
+  /* Scale-up effect on individual items on hover */
+  .project-item:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+  }
+  
