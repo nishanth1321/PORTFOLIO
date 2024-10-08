@@ -40,7 +40,7 @@ const MainExport = () => {
             <div className="w-full md:w-1/2">
               <Education />
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-3/4">
               <Experience />
             </div>
           </div>
